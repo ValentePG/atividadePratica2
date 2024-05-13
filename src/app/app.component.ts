@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   userName = 'Joaquim';
+  show = false;
 
   userData = {
     email: 'Joaquim@email.com',
@@ -15,4 +16,8 @@ export class AppComponent {
   };
 
   title = 'atividadePratica2';
+
+  showMessage(): void{
+    this.show = !this.show;
+  }
 }
